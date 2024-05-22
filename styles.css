@@ -28,16 +28,9 @@
     right: 0;
 }
 
-body {
-    font-family: 'Merienda', sans-serif;
-    font-size: 16px;
-    color: #535353;
-    background-color: #EADDCA;
-    padding-bottom: 0px; /* Tilføj mere whitespace mellem footer og body */
-}
 
 header {
-    background-color: #EADDCA;
+    background-color: #9B6441;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -55,9 +48,8 @@ header {
 
 /* nav */
 nav {
-    padding: 1rem;
     display: flex;
-    background-color: #EADDCA;
+    background-color: #9B6441;
 }
 
 
@@ -79,12 +71,12 @@ a:visited {
     font-family: 'Merienda', sans-serif;
 }
 a:hover {
-    color: #6F86FF;
+    color: #3CADB0;
     font-family: 'Merienda', sans-serif;
 }
 
 body {
-    background-color: #EADDCA;
+    background-color: #9B6441;
     font-family: sans-serif;
 }
 
@@ -92,7 +84,7 @@ body {
 
 /* off-screen-menu */
 .off-screen-menu {
-    background-color: #A8957A;
+    background-color: #9B6441;
     height: 100vh;
     width: 100%;
     max-width: 450px;
@@ -112,15 +104,72 @@ body {
     right: 0;
 }
 
+        /* Tilføj din CSS her */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Merienda', sans-serif;
+        }
 
+        body {
+            background-color: #9B6441;
+            font-family: sans-serif;
+            color: #535353;
+    
+        }
 
-/* nav */
-nav {
-    padding: 1rem;
-    display: flex;
-    background-color: #EADDCA
-}
+        .item {
+            text-align: center;
+            position: relative; /* Gør parent elementet relativt positioneret */
+            margin: 20px; /* Lidt margen omkring hver vare */
+        }
 
+        .item img {
+            width: 100%; /* Tilpas billedets størrelse */
+            height: auto;
+        }
+
+        .item button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #A8957A;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.5s;
+        }
+
+        .item button:hover {
+            background-color: #535353;
+        }
+
+        .icon {
+            margin-top: 5px; /* Lidt mellemrum mellem teksten og ikonet */
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+
+        .se-udvalget-icon {
+            display: block;
+            margin: 0 auto;
+            width: 24px;
+            height: 24px;
+            fill: #000000;
+            cursor: pointer;
+        }
+
+        .se-udvalget-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
 
 
 /* hamburger menu */
@@ -128,7 +177,10 @@ nav {
     height: 50px;
     width: 40px;
     margin-left: auto;
-    position: relative;
+    position: fixed; /* Ændret fra relative til fixed */
+    top: 1rem; /* Juster denne værdi for at placere menuen korrekt fra toppen */
+    right: 1rem; /* Juster denne værdi for at placere menuen korrekt fra højre */
+    z-index: 1000; /* Sørg for, at den er oven på andre elementer */
 }
 .ham-menu span {
     height: 5px;
@@ -148,7 +200,7 @@ nav {
     top: 75%;
 }
 .ham-menu.active span {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     z-index: 3;
 }
 .ham-menu.active span:nth-child(1) {
@@ -162,6 +214,7 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 
 
 nav ul {
@@ -183,8 +236,12 @@ nav ul li a {
 /* CSS-stilarter */
 .logo {
     max-width: 8%; /* Sørg for, at logoet aldrig overstiger containerens bredde */
-    height: auto; /* Skaleres proportionelt */
-    margin-top: -5rem; /* Flyt logoet lidt længere op */
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 1000;
+  
 }
 
 /* Tilføj denne del i din eksisterende CSS-fil */
@@ -198,31 +255,49 @@ nav ul li a {
 
 h1 {
     text-align: center;
-    margin-top: 100px; /* Tilføj margin øverst for at skubbe overskriften ned */
-    color: black;
+    margin-bottom: 100px; /* Tilføj margin øverst for at skubbe overskriften ned */
+    color: rgb(255, 255, 255);
+    font-size: 85px;
 }
 
 h2 {
     text-align: center;
     margin-top: 40px; /* Tilføj mellemrum over underteksten */
-    color: black;
+    color: rgb(255, 255, 255);
+    font-size: 55px;
 }
+
+.hero-content h3 a {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+}
+
+.hero-content h3 a:hover {
+    color: #3CADB0;
+    font-family: 'Merienda', sans-serif;
+}
+
+
 
 h3 {
     text-align: center;
-    margin-top: 200px; /* Tilføj mellemrum over underteksten */
-    color: black;
+    margin-top: 50px; /* Tilføj mellemrum over underteksten */
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+
 }
 
 footer {
-    bottom: 0;
-    left: 0;
     width: 100%;
-    background-color: #5B6166; /* Juster farven efter behov */
-    color: #fff; /* Juster tekstfargen efter behov */
-    padding: 10px 0;
+    background-color: #463B35;
+    color: #fff;
+    padding: 25px 0;
     text-align: center;
+
 }
+
+
 
 .product-image {
     display: block;
@@ -232,12 +307,33 @@ footer {
 }
 
 .gallery {
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px; /* Juster efter behov */
-    margin-bottom: 50px; /* Tilføj margin til bunden */
+    margin-top: 250px; /* Juster efter behov */
+    margin-bottom: 250px; /* Tilføj margin til bunden */
+    display: flex;
+   
 }
+
+/* Hero Section Styling */
+.hero {
+    width: 100%;
+    height: 100vh; /* Juster højden som ønsket */
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
 
 
 .item {
@@ -246,7 +342,7 @@ footer {
 }
 
 .item img {
-    width: 550px; /* Juster størrelsen efter behov */
+    width: 95%; /* Juster størrelsen efter behov */
     height: auto;
     transition: transform 0.3s ease; /* Tilføj en glidende overgang til transform-egenskaben */
 }
@@ -261,10 +357,10 @@ footer {
     position: absolute;
     left: 50%; /* Placer stregerne midt under overskriften */
     transform: translateX(-50%);
-    bottom: -5px; /* Juster stregens afstand fra overskriften */
+    bottom: -10px; /* Juster stregens afstand fra overskriften */
     width: 40%; /* Juster stregens længde */
     height: 2px; /* Juster stregens tykkelse */
-    background-color: black; /* Juster stregens farve */
+    background-color: #3CADB0; /* Juster stregens farve */
 }
 
 .item:hover img {
@@ -274,22 +370,37 @@ footer {
 /* Tilpasning af knapper */
 .item button {
     position: absolute; /* Gør knappen absolut positioneret inden i parent elementet */
-    bottom: -25px; /* Afstand fra bunden af parent elementet */
+    bottom: -2.5rem; /* Afstand fra bunden af parent elementet */
     left: 50%; /* Centrer knappen vandret */
     transform: translateX(-50%); /* Juster knappen til centreret position */
-    background-color: #A8957A; /*baggrundsfarve */
+    background: linear-gradient(45deg, #A8957A, #3CADB0); /* Gradient baggrundsfarve */
     color: white; /* Hvid tekstfarve */
-    padding: 10px 20px; /* Lidt polstring for bedre udseende */
-    border: 1px solid black; /* Tilføj en sort kantlinje */
+    padding: 0.1rem 2rem; /* Øget padding for at gøre knappen mere aflang */
+    border: none; /* Fjern kantlinjen */
     cursor: pointer; /* Cursor ændres til en hånd, når den flyttes over knappen */
-    border-radius: 5px; /* Afrundede hjørner */
-    transition: background-color 0.5s; /* Overgangseffekt for baggrundsfarveændring */
+    border-radius: 0.625rem; /* Afrundede hjørner */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Tilføj skygge */
+    transition: all 0.3s ease; /* Overgangseffekt for alle ændringer */
+    font-size: 1rem; /* Fontstørrelse i rem */
+    transform-origin: center;
+    transform: translateX(-50%) skew(-5deg); /* Mindre skæv form for aflange knapper */
 }
 
 /* Ændrer baggrundsfarven, når der holdes over knappen */
 .item button:hover {
-    background-color: #6F86FF; /* Lidt mørkere grøn */
+    background: linear-gradient(45deg, #3CADB0, #A8957A); /* Ændre gradient farver */
+    box-shadow: 0 0.375rem 0.5rem rgba(0, 0, 0, 0.2); /* Lidt kraftigere skygge */
+    transform: translateX(-50%) translateY(-0.125rem) skew(-5deg); /* Løft knappen lidt op */
 }
+
+/* Ændrer baggrundsfarven, når knappen er aktiv */
+.item button:active {
+    background: linear-gradient(45deg, #5B6166, #A8957A); /* Ændre gradient farver */
+    box-shadow: 0 0.1875rem 0.25rem rgba(0, 0, 0, 0.2); /* Lidt mindre skygge */
+    transform: translateX(-50%) translateY(0) skew(-5deg); /* Ingen løft */
+}
+
+
 
 .social-media {
     display: flex;
@@ -313,29 +424,54 @@ footer {
 }
 
 
+
+
 /* Medieforespørgsler for forskellige enheder */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     /* Tilpasninger for tablets og desktops */
-    body {
-        font-size: 18px;
-    }
-}
+    .gallery {
+        display: grid;
+        
 
-@media only screen and (min-width: 1024px) {
-    /* Tilpasninger for større desktopskærme */
-    body {
+    }
+    .logo {
+        max-width: 80%; /* Sørg for, at logoet aldrig overstiger containerens bredde */
+        height: auto;
+        margin-right: 10px;
+        position: relative;
+        z-index: -5;
+    
+    }
+    .hero {
+        width: 100%;
+        height: 100vh; /* Juster højden som ønsket */
+        background: url('') no-repeat center center/cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+    
+        font-size: 30px;
+        display: none;
+        
+    }
+    h2 {
+
+        font-size: 25px;
+
+    }
+    .hero-content h3 a {
         font-size: 20px;
-    }
-}
-
-/* Tilpasninger for mindre skærme, f.eks. smartphones */
-@media only screen and (max-width: 600px) {
-    .item {
-        margin: 10px;
+        color: rgb(255, 255, 255);
+    
     }
     
-    .item button {
-        padding: 20px 16px;
-        font-size: 14px;
-    }
+
+
+    
 }
+
+
+
