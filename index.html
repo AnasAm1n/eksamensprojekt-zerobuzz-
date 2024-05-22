@@ -3,57 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projektnavn</title>
+    <title>ZeroBuzz Brew</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Tilføj linket til Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
     <style>
         /* Tilføj din CSS her */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Merienda', sans-serif;
+        }
+
+        body {
+            background-color: #EADDCA;
+            font-family: sans-serif;
+            color: #535353;
+            padding-bottom: 200px;
+        }
+
+        .item {
+            text-align: center;
+            position: relative; /* Gør parent elementet relativt positioneret */
+            margin: 20px; /* Lidt margen omkring hver vare */
+        }
+
+        .item img {
+            width: 100%; /* Tilpas billedets størrelse */
+            height: auto;
+        }
+
+        .item button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #A8957A;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.5s;
+        }
+
+        .item button:hover {
+            background-color: #535353;
+        }
+
+        .icon {
+            margin-top: 5px; /* Lidt mellemrum mellem teksten og ikonet */
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+
+        .se-udvalget-icon {
+            display: block;
+            margin: 0 auto;
+            width: 24px;
+            height: 24px;
+            fill: #000000;
+            cursor: pointer;
+        }
+
+        .se-udvalget-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
 </head>
+<body>
+  <div class="off-screen-menu">
+    <ul>
+      <li><a href="#">Hjem</a></li>
+      <li><a href="#">Original</a></li>
+      <li><a href="#">Light Beer</a></li>
+      <li><a href="#">Dark Beer</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
 
-<div class="off-screen-menu"></div>
-<ul>
-    <li>Original</li>
-    <li>Light Beer</li>
-    <li>Dark Beer</li>
-    <li>Kontakt</li>
-</ul>
-<nav>
+  <nav>
     <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-</nav>
+  </nav>
 <body>
     <header>
-        <img src="images/logo2.png" alt="Logo" class="logo">
+        <a href="#" class="logo-link">
+            <img src="images/logo2.png" alt="Logo" class="logo">
+        </a>
     </header>
+    
     <h1>Velkommen til ZeroBuzz Brew</h1>
     <h2>Frisk, kold og alkoholfri øl</h2>
     <h3><a href="#gallery" onclick="smoothScroll('#gallery')">Se udvalget</a></h3>
+    <a href="#gallery" class="se-udvalget-link" onclick="smoothScroll('#gallery')">
+        <svg class="se-udvalget-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+        </svg>
+    </a>
     <div class="gallery" id="gallery">
         <div class="item">
             <h3>ZeroBuzz Original</h3>
             <a href="images/Original.png" target="_blank">
                 <img src="images/Original.png" alt="Image 1">
             </a>
-            <button>Se mere</button>
+            <button>Se mere
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 21c-0.256 0-0.512-0.098-0.707-0.293l-10-10c-0.39-0.39-0.39-1.024 0-1.414s1.024-0.39 1.414 0L12 18.586l9.293-9.293c0.39-0.39 1.024-0.39 1.414 0s0.39 1.024 0 1.414l-10 10c-0.195 0.195-0.451 0.293-0.707 0.293z"/>
+                </svg>
+            </button>
         </div>
         <div class="item">
             <h3>ZeroBuzz Light Beer</h3>
             <a href="images/Light.png" target="_blank">
                 <img src="images/Light.png" alt="Image 2">
             </a>
-            <button>Se mere</button>
+            <button>Se mere
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 21c-0.256 0-0.512-0.098-0.707-0.293l-10-10c-0.39-0.39-0.39-1.024 0-1.414s1.024-0.39 1.414 0L12 18.586l9.293-9.293c0.39-0.39 1.024-0.39 1.414 0s0.39 1.024 0 1.414l-10 10c-0.195 0.195-0.451 0.293-0.707 0.293z"/>
+                </svg>
+            </button>
         </div>
         <div class="item">
             <h3>ZeroBuzz Dark Beer</h3>
             <a href="images/Dark.png" target="_blank">
                 <img src="images/Dark.png" alt="Image 3">
             </a>
-            <button>Se mere</button>
+            <button>Se mere
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 21c-0.256 0-0.512-0.098-0.707-0.293l-10-10c-0.39-0.39-0.39-1.024 0-1.414s1.024-0.39 1.414 0L12 18.586l9.293-9.293c0.39-0.39 1.024-0.39 1.414 0s0.39 1.024 0 1.414l-10 10c-0.195 0.195-0.451 0.293-0.707 0.293z"/>
+                </svg>
+            </button>
         </div>
     </div>
     <!-- Resten af dit indhold her -->
@@ -67,6 +155,6 @@
     </footer>
     
 
-    <script src="scripts.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
