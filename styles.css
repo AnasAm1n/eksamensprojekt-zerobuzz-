@@ -24,19 +24,17 @@
     transition: .3s ease;
 }
 
-.off-screen-menu.active{
+.off-screen-menu.active {
     right: 0;
 }
-
 
 header {
     background-color: #9B6441;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    border-bottom: 0px solid black; /* Tilføj en streg under headeren */
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* Tilføj skygge */
-
+    border-bottom: 0px solid black;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -52,7 +50,6 @@ nav {
     background-color: #9B6441;
 }
 
-
 /* base styles */
 * {
     margin: 0;
@@ -66,10 +63,12 @@ a {
     color: rgb(0, 0, 0);
     font-family: 'Merienda', sans-serif;
 }
+
 a:visited {
     color: rgb(0, 0, 0);
     font-family: 'Merienda', sans-serif;
 }
+
 a:hover {
     color: #3CADB0;
     font-family: 'Merienda', sans-serif;
@@ -80,108 +79,17 @@ body {
     font-family: sans-serif;
 }
 
-
-
-/* off-screen-menu */
-.off-screen-menu {
-    background-color: #9B6441;
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-    z-index: 2;
-}
-.off-screen-menu.active {
-    right: 0;
-}
-
-        /* Tilføj din CSS her */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Merienda', sans-serif;
-        }
-
-        body {
-            background-color: #9B6441;
-            font-family: sans-serif;
-            color: #535353;
-    
-        }
-
-        .item {
-            text-align: center;
-            position: relative; /* Gør parent elementet relativt positioneret */
-            margin: 20px; /* Lidt margen omkring hver vare */
-        }
-
-        .item img {
-            width: 100%; /* Tilpas billedets størrelse */
-            height: auto;
-        }
-
-        .item button {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #A8957A;
-            color: white;
-            padding: 10px 20px;
-            border: 1px solid black;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background-color 0.5s;
-        }
-
-        .item button:hover {
-            background-color: #535353;
-        }
-
-        .icon {
-            margin-top: 5px; /* Lidt mellemrum mellem teksten og ikonet */
-            width: 16px;
-            height: 16px;
-            fill: white;
-        }
-
-        .se-udvalget-icon {
-            display: block;
-            margin: 0 auto;
-            width: 24px;
-            height: 24px;
-            fill: #000000;
-            cursor: pointer;
-        }
-
-        .se-udvalget-link {
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-
 /* hamburger menu */
 .ham-menu {
     height: 50px;
     width: 40px;
     margin-left: auto;
-    position: fixed; /* Ændret fra relative til fixed */
-    top: 1rem; /* Juster denne værdi for at placere menuen korrekt fra toppen */
-    right: 1rem; /* Juster denne værdi for at placere menuen korrekt fra højre */
-    z-index: 1000; /* Sørg for, at den er oven på andre elementer */
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
 }
+
 .ham-menu span {
     height: 5px;
     width: 100%;
@@ -193,29 +101,33 @@ body {
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
+
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
-.ham-menu span:nth-child(3) {
+
+ham-menu span:nth-child(3) {
     top: 75%;
 }
+
 .ham-menu.active span {
     background-color: rgb(0, 0, 0);
     z-index: 3;
 }
+
 .ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
+
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-
 
 nav ul {
     list-style: none;
@@ -235,34 +147,29 @@ nav ul li a {
 
 /* CSS-stilarter */
 .logo {
-    max-width: 8%; /* Sørg for, at logoet aldrig overstiger containerens bredde */
+    max-width: 8%;
     position: fixed;
     top: 0;
     left: 0;
     margin: 20px;
     z-index: 1000;
-  
 }
-
-/* Tilføj denne del i din eksisterende CSS-fil */
 
 .logo-link {
     display: inline-block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
 h1 {
     text-align: center;
-    margin-bottom: 100px; /* Tilføj margin øverst for at skubbe overskriften ned */
+    margin-bottom: 100px;
     color: rgb(255, 255, 255);
     font-size: 85px;
 }
 
 h2 {
     text-align: center;
-    margin-top: 40px; /* Tilføj mellemrum over underteksten */
+    margin-top: 40px;
     color: rgb(255, 255, 255);
     font-size: 55px;
 }
@@ -270,7 +177,6 @@ h2 {
 .hero-content h3 a {
     font-size: 30px;
     color: rgb(255, 255, 255);
-
 }
 
 .hero-content h3 a:hover {
@@ -278,14 +184,11 @@ h2 {
     font-family: 'Merienda', sans-serif;
 }
 
-
-
 h3 {
     text-align: center;
-    margin-top: 50px; /* Tilføj mellemrum over underteksten */
+    margin-top: 50px;
     color: rgb(255, 255, 255);
     font-size: 25px;
-
 }
 
 footer {
@@ -294,31 +197,26 @@ footer {
     color: #fff;
     padding: 25px 0;
     text-align: center;
-
 }
-
-
 
 .product-image {
     display: block;
-    margin: 20px auto; /* Juster margenen for at ændre placeringen */
-    max-width: 50%; /* Begræns billedets maksimale bredde til containerens bredde */
-    height: auto; /* Skaleres proportionelt */
+    margin: 20px auto;
+    max-width: 50%;
+    height: auto;
 }
 
 .gallery {
     justify-content: space-around;
     align-items: center;
-    margin-top: 250px; /* Juster efter behov */
-    margin-bottom: 250px; /* Tilføj margin til bunden */
+    margin-top: 250px;
+    margin-bottom: 250px;
     display: flex;
-   
 }
 
-/* Hero Section Styling */
 .hero {
     width: 100%;
-    height: 100vh; /* Juster højden som ønsket */
+    height: 100vh;
     background: url('images/hero.jpg') no-repeat center center/cover;
     position: relative;
     display: flex;
@@ -331,120 +229,102 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-
-
-
-
-
 .item {
     text-align: center;
-    position: relative; /* Gør parent elementet relativt positioneret */
+    position: relative;
 }
 
 .item img {
-    width: 95%; /* Juster størrelsen efter behov */
+    width: 95%;
     height: auto;
-    transition: transform 0.3s ease; /* Tilføj en glidende overgang til transform-egenskaben */
+    transition: transform 0.3s ease;
 }
 
 .item h3 {
-    margin-bottom: 15px; /* Tilføj mellemrum mellem overskriften og stregen */
+    margin-bottom: 15px;
     position: relative;
 }
 
 .item h3::after {
     content: '';
     position: absolute;
-    left: 50%; /* Placer stregerne midt under overskriften */
+    left: 50%;
     transform: translateX(-50%);
-    bottom: -10px; /* Juster stregens afstand fra overskriften */
-    width: 40%; /* Juster stregens længde */
-    height: 2px; /* Juster stregens tykkelse */
-    background-color: #3CADB0; /* Juster stregens farve */
+    bottom: -10px;
+    width: 40%;
+    height: 2px;
+    background-color: #3CADB0;
 }
 
 .item:hover img {
-    transform: scale(1.1); /* Skalér billedet lidt større på hover */
+    transform: scale(1.1);
 }
 
-/* Tilpasning af knapper */
 .item button {
-    position: absolute; /* Gør knappen absolut positioneret inden i parent elementet */
-    bottom: -2.5rem; /* Afstand fra bunden af parent elementet */
-    left: 50%; /* Centrer knappen vandret */
-    transform: translateX(-50%); /* Juster knappen til centreret position */
-    background: linear-gradient(45deg, #A8957A, #3CADB0); /* Gradient baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
-    padding: 0.1rem 2rem; /* Øget padding for at gøre knappen mere aflang */
-    border: none; /* Fjern kantlinjen */
-    cursor: pointer; /* Cursor ændres til en hånd, når den flyttes over knappen */
-    border-radius: 0.625rem; /* Afrundede hjørner */
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Tilføj skygge */
-    transition: all 0.3s ease; /* Overgangseffekt for alle ændringer */
-    font-size: 1rem; /* Fontstørrelse i rem */
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #A8957A, #3CADB0);
+    color: white;
+    padding: 0.1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 1rem;
     transform-origin: center;
-    transform: translateX(-50%) skew(-5deg); /* Mindre skæv form for aflange knapper */
+    transform: translateX(-50%) skew(-5deg);
 }
 
-/* Ændrer baggrundsfarven, når der holdes over knappen */
 .item button:hover {
-    background: linear-gradient(45deg, #3CADB0, #A8957A); /* Ændre gradient farver */
-    box-shadow: 0 0.375rem 0.5rem rgba(0, 0, 0, 0.2); /* Lidt kraftigere skygge */
-    transform: translateX(-50%) translateY(-0.125rem) skew(-5deg); /* Løft knappen lidt op */
+    background: linear-gradient(45deg, #3CADB0, #A8957A);
+    box-shadow: 0 0.375rem 0.5rem rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%) translateY(-0.125rem) skew(-5deg);
 }
 
-/* Ændrer baggrundsfarven, når knappen er aktiv */
 .item button:active {
-    background: linear-gradient(45deg, #5B6166, #A8957A); /* Ændre gradient farver */
-    box-shadow: 0 0.1875rem 0.25rem rgba(0, 0, 0, 0.2); /* Lidt mindre skygge */
-    transform: translateX(-50%) translateY(0) skew(-5deg); /* Ingen løft */
+    background: linear-gradient(45deg, #5B6166, #A8957A);
+    box-shadow: 0 0.1875rem 0.25rem rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%) translateY(0) skew(-5deg);
 }
-
-
 
 .social-media {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px; /* Juster efter behov */
+    margin-bottom: 10px;
 }
 
 .social-media a {
     display: inline-block;
-    margin: 0 10px; /* Juster mellemrummet mellem ikonerne */
+    margin: 0 10px;
 }
 
 .social-media img {
-    width: 30px; /* Juster størrelsen efter behov */
+    width: 30px;
     height: auto;
 }
 
-/* Tilføj lidt afstand mellem social media handles */
 .social-media a + a {
     margin-left: 10px;
 }
 
-
-
-
 /* Medieforespørgsler for forskellige enheder */
 @media only screen and (max-width: 768px) {
-    /* Tilpasninger for tablets og desktops */
     .gallery {
         display: grid;
-        
-
     }
     .logo {
-        max-width: 80%; /* Sørg for, at logoet aldrig overstiger containerens bredde */
+        max-width: 80%;
         height: auto;
         margin-right: 10px;
         position: relative;
         z-index: -5;
-    
     }
     .hero {
         width: 100%;
-        height: 100vh; /* Juster højden som ønsket */
+        height: 100vh;
         background: url('') no-repeat center center/cover;
         position: relative;
         display: flex;
@@ -452,26 +332,52 @@ footer {
         align-items: center;
     }
     h1 {
-    
         font-size: 30px;
         display: none;
-        
     }
     h2 {
-
         font-size: 25px;
-
     }
     .hero-content h3 a {
         font-size: 20px;
         color: rgb(255, 255, 255);
-    
     }
-    
-
-
-    
 }
 
+/* Tilføjelse af beer-section */
+.beer-section {
+    background-color: #9B6441;
+    padding: 50px 0;
+}
 
+.beer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Sørger for at elementerne ikke brydes */
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
+.beer-image {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.beer-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.beer-description {
+    flex: 1 1 45%;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left; /* Justerer teksten til venstre */
+}
+
+.beer-description p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
