@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       index = (index + 1) % reviews.length;
   }
 
-  setInterval(showReview, 20000); // Opdater intervaltiden til 20000 millisekunder (20 sekunder)
+  setInterval(showReview, 10000); // Opdater intervaltiden til 20000 millisekunder (20 sekunder)
 });
 
 

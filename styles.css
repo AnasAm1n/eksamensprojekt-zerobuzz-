@@ -315,39 +315,6 @@ footer {
     margin-left: 10px;
 }
 
-/* Medieforespørgsler for forskellige enheder */
-@media only screen and (max-width: 768px) {
-    .gallery {
-        display: grid;
-    }
-    .logo {
-        max-width: 80%;
-        height: auto;
-        margin-right: 10px;
-        position: relative;
-        z-index: -5;
-    }
-    .hero {
-        width: 100%;
-        height: 100vh;
-        background: url('') no-repeat center center/cover;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    h1 {
-        font-size: 30px;
-        display: none;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    .hero-content h3 a {
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-    }
-}
 
 
 /* Stil for den nye sektion med billede og tekst */
@@ -493,6 +460,14 @@ footer {
     overflow: hidden; /* Skjul indhold uden for containeren */
 }
 
+.review-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 100px; /* Juster margin-bottom for mere afstand */
+    font-family: 'Merienda', sans-serif;
+}
+
 .review-box {
     background-color: #A8957A; /* Baggrunds farve for din review boks */
     border-radius: 10px; /* Afrundede kanter */
@@ -564,6 +539,58 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+
+/* Medieforespørgsler for forskellige enheder */
+@media only screen and (max-width: 768px) {
+    .gallery {
+        display: grid; 
+    
+    }
+    .logo {
+        max-width: 80%;
+        height: auto;
+        margin-right: 10px;
+        position: relative;
+        z-index: -5;
+    }
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background: url('') no-repeat center center/cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 30px;
+        display: none;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .hero-content h3 a {
+        font-size: 20px;
+        color: rgb(255, 255, 255)
+        
+
+    }
+    .item button {
+        background: linear-gradient(45deg, #A8957A, #3CADB0);
+        color: white;
+        padding: 0.5px 20px; /* Mindre padding */
+        font-size: 0.875rem; /* Mindre font-størrelse */
+        margin-bottom: -20px;
+
+
+    }
+    .item {
+      margin-bottom: 300px;
+    }
+    
 }
 
 
