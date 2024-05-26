@@ -6,3 +6,20 @@ hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
   offScreenMenu.classList.toggle("active");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var reviews = document.querySelectorAll(".review-item");
+  var index = 0;
+
+  function showReview() {
+      reviews.forEach(function (review) {
+          review.classList.remove("active");
+      });
+      reviews[index].classList.add("active");
+      index = (index + 1) % reviews.length;
+  }
+
+  setInterval(showReview, 20000); // Opdater intervaltiden til 20000 millisekunder (20 sekunder)
+});
+
+

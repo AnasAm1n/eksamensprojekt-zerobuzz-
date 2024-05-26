@@ -89,6 +89,7 @@ body {
     top: 1rem;
     right: 1rem;
     z-index: 1000;
+
 }
 
 .ham-menu span {
@@ -101,19 +102,21 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
+    
 }
 
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
 
-ham-menu span:nth-child(3) {
+.ham-menu span:nth-child(3) {
     top: 75%;
 }
 
 .ham-menu.active span {
     background-color: rgb(0, 0, 0);
     z-index: 3;
+    
 }
 
 .ham-menu.active span:nth-child(1) {
@@ -198,6 +201,7 @@ footer {
     color: #fff;
     padding: 25px 0;
     text-align: center;
+    margin-top: 100px;
 }
 
 .product-image {
@@ -345,55 +349,221 @@ footer {
     }
 }
 
-.beer-section {
-    background-color: #9B6441;
+
+/* Stil for den nye sektion med billede og tekst */
+.new-section {
+    display: flex;
+    align-items: center;
     padding: 50px 0;
 }
 
-.beer-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap; /* Sørger for at elementerne ikke brydes */
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: 'Merienda', sans-serif;
-}
-
-.beer-image {
-    flex: 1 1 45%;
-    text-align: center;
-    font-family: 'Merienda', sans-serif;
-    overflow: hidden; /* Sikrer at billedet ikke bryder ud af containeren */
+.image-container {
+    flex: 1;
     position: relative;
+    overflow: visible; /* Ændret til visible */
 }
 
-.beer-image img {
+.image-container img {
     max-width: 110%;
     height: auto;
-    border-radius: 10px; /* Fjern kant-radius, hvis du vil have det firkantet */
-    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Tilføj overgangseffekt */
+    transition: transform 0.5s ease;
+    margin-top: -160px; /* Tilføjet negativ margin for at skubbe billedet opad */
+    margin-left: -30px; /* Juster denne værdi efter behov */
+
 }
 
-.beer-image:hover img {
-    transform: scale(1.2) rotate(3deg); /* Forstør og roter billedet */
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7); /* Tilføj dybere skyggeeffekt */
+.image-container:hover img {
+    transform: rotate(5deg) scale(1.1);
 }
 
-.beer-description {
-    flex: 1 1 45%;
+/* Roter billedet tilbage til neutral position når ikke hoveret */
+.image-container img:not(:hover) {
+    transform: none;
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 0px;
+    margin-top: -150px; /* Tilføj denne linje for at skubbe teksten lidt op */
+}
+
+.text-container h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
     color: #ffffff;
-    padding: 20px;
-    text-align: left; /* Justerer teksten til venstre */
-    margin-top: 50px;
+    font-size: 28px;
+    line-height: 1.8;
+    margin-right: 50px;
 }
 
-.beer-description p {
-    font-size: 1.2rem;
+
+
+
+
+
+
+
+
+.icon-section {
+    background-color: #A8957A;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.icon-item {
+    flex: 1 1 30%;
+    margin: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.icon-item img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.icon-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Merienda', sans-serif;
+    border-bottom: 2px solid #000; /* Add a border under h3 */
+    padding-bottom: 5px; /* Adjust the distance between the border and the text */
+}
+
+.icon-item p {
+    font-size: 1rem;
     line-height: 1.5;
+    font-family: 'Merienda', sans-serif;
 }
 
-/* Tilføjet denne regel for at sikre 'Merienda' fonten anvendes */
-.beer-section, .beer-container, .beer-image, .beer-description, .beer-description p {
-    font-family: 'Merienda', sans-serif !important;
+
+/* Circle styles */
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #fff; /* Hvid baggrundsfarve */
+    border-radius: 50%; /* Gør formen cirkulær */
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin:  auto 20px;
 }
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    transition: opacity 0.3s ease;
+}
+
+.circle:hover img {
+    opacity: 0.8;
+}
+
+/*Review sektion*/
+
+/*Review sektion*/
+
+.review-section {
+    background-color: #9B6441;
+    padding: 20px 0; /* Juster paddingen for at skubbe sektionen tættere på dine ikoner */
+    margin-top: -450px; /* Juster marginen for at flytte sektionen opad */
+    overflow: hidden; /* Skjul indhold uden for containeren */
+}
+
+.review-box {
+    background-color: #A8957A; /* Baggrunds farve for din review boks */
+    border-radius: 10px; /* Afrundede kanter */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
+    padding: 20px; /* Juster boksens padding efter behov */
+    margin: 0 auto; /* Center review boksen på siden */
+    max-width: 600px; /* Sæt en maksimal bredde for boksen */
+    overflow: hidden; /* Skjul indhold uden for boksen */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Glidende overgangseffekt for baggrundsfarve, skyggeeffekt og forskydning */
+}
+
+.review-box:hover {
+    background-color: #F9CDAD; /* Ændre baggrundsfarven ved hover */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4); /* Tilføj en ekstra skyggeeffekt ved hover */
+    transform: scale(1.02); /* Skalér lidt større ved hover */
+}
+
+.review-box:hover h3 {
+    color: #2C2C2C; /* Ændre overskriftens farve ved hover */
+}
+
+.review-box:hover p {
+    color: #4C4C4C; /* Ændre teksten farve ved hover */
+}
+
+.review-box:hover .stars {
+    color: #b6a234; /* Ændre farven på stjernerne ved hover */
+}
+
+
+
+.review-item {
+    flex: 1;
+    margin: 0 auto; /* Center align horizontally */
+    max-width: 600px; /* Set maximum width */
+    text-align: center;
+    display: none; /* Start with reviews hidden */
+    animation: slideIn 2s forwards; /* Apply slideIn animation */
+}
+
+.review-item.active {
+    display: block; /* Show active review */
+}
+
+.review-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Merienda', sans-serif;
+}
+
+.review-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Merienda', sans-serif;
+    margin-bottom: 20px;
+}
+
+.review-item p.stars {
+    font-size: 24px;
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
