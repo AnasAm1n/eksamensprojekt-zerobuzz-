@@ -66,7 +66,7 @@ a {
 }
 
 a:visited {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Merienda', sans-serif;
 }
 
@@ -565,7 +565,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    h1 {
+    .hero-content h1 {
         font-size: 30px;
         display: none;
     }
@@ -590,6 +590,46 @@ footer {
     .item {
       margin-bottom: 300px;
     }
+    
+    .text-container p {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 50px;
+    }
+    
+    .image-container {
+        flex: 1;
+        position: relative;
+        overflow: visible; /* Ændret til visible */
+        margin-bottom: 150px;
+
+    }
+    .new-section {
+        display: grid;
+    }
+    .container h1 {
+        font-size: 60px;
+    }
+.icon-container {
+    display: grid;
+}
+.review-box {
+    background-color: #A8957A; /* Baggrunds farve for din review boks */
+    border-radius: 10px; /* Afrundede kanter */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
+    padding: 20px; /* Juster boksens padding efter behov */
+    margin: 0 auto; /* Center review boksen på siden */
+    max-width: 350px; /* Sæt en maksimal bredde for boksen */
+    overflow: hidden; /* Skjul indhold uden for boksen */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Glidende overgangseffekt for baggrundsfarve, skyggeeffekt og forskydning */
+}
+.review-section h2 {
+    font-size: 30px;
+}
+
+
+    
+    
     
 }
 
