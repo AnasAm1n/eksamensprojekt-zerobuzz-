@@ -8,7 +8,7 @@
 
 /* off-screen-menu */
 .off-screen-menu {
-    background-color: black;
+    background-color: #9B6441;
     height: 100vh;
     width: 100%;
     max-width: 450px;
@@ -22,6 +22,7 @@
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
+    z-index: 2;
 }
 
 .off-screen-menu.active {
@@ -76,7 +77,7 @@ a:hover {
 
 body {
     background-color: #9B6441;
-    font-family: sans-serif;
+    font-family: 'Merienda', sans-serif;
 }
 
 /* hamburger menu */
@@ -267,13 +268,13 @@ footer {
     transform: translateX(-50%);
     background: linear-gradient(45deg, #A8957A, #3CADB0);
     color: white;
-    padding: 0.1rem 2rem;
+    padding: 0.1rem 1rem; /* Mindre padding */
     border: none;
     cursor: pointer;
     border-radius: 0.625rem;
     box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    font-size: 1rem;
+    font-size: 0.875rem; /* Mindre font-størrelse */
     transform-origin: center;
     transform: translateX(-50%) skew(-5deg);
 }
@@ -344,7 +345,6 @@ footer {
     }
 }
 
-/* Tilføjelse af beer-section */
 .beer-section {
     background-color: #9B6441;
     padding: 50px 0;
@@ -357,17 +357,27 @@ footer {
     flex-wrap: nowrap; /* Sørger for at elementerne ikke brydes */
     margin: 0 auto;
     max-width: 1200px;
+    font-family: 'Merienda', sans-serif;
 }
 
 .beer-image {
     flex: 1 1 45%;
     text-align: center;
+    font-family: 'Merienda', sans-serif;
+    overflow: hidden; /* Sikrer at billedet ikke bryder ud af containeren */
+    position: relative;
 }
 
 .beer-image img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px; /* Fjern kant-radius, hvis du vil have det firkantet */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Tilføj overgangseffekt */
+}
+
+.beer-image:hover img {
+    transform: scale(1.2) rotate(3deg); /* Forstør og roter billedet */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7); /* Tilføj dybere skyggeeffekt */
 }
 
 .beer-description {
@@ -375,9 +385,15 @@ footer {
     color: #ffffff;
     padding: 20px;
     text-align: left; /* Justerer teksten til venstre */
+    margin-top: 50px;
 }
 
 .beer-description p {
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+/* Tilføjet denne regel for at sikre 'Merienda' fonten anvendes */
+.beer-section, .beer-container, .beer-image, .beer-description, .beer-description p {
+    font-family: 'Merienda', sans-serif !important;
 }
