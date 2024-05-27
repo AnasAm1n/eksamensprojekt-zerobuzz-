@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* off-screen-menu */
@@ -62,22 +62,22 @@ nav {
 
 a {
     color: rgb(0, 0, 0);
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 a:visited {
-    color: rgb(255, 255, 255);
-    font-family: 'Merienda', sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
 }
 
 a:hover {
     color: #3CADB0;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
     background-color: #9B6441;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* hamburger menu */
@@ -185,7 +185,7 @@ h2 {
 
 .hero-content h3 a:hover {
     color: #3CADB0;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h3 {
@@ -256,9 +256,9 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     bottom: -10px;
-    width: 40%;
+    width: 55%;
     height: 2px;
-    background-color: #3CADB0;
+    background-color: #000000;
 }
 
 .item:hover img {
@@ -272,7 +272,7 @@ footer {
     transform: translateX(-50%);
     background: linear-gradient(45deg, #A8957A, #3CADB0);
     color: white;
-    padding: 0.1rem 1rem; /* Mindre padding */
+    padding: 0.1rem 2rem; /* Mindre padding */
     border: none;
     cursor: pointer;
     border-radius: 0.625rem;
@@ -340,7 +340,7 @@ footer {
 }
 
 .image-container:hover img {
-    transform: rotate(5deg) scale(1.1);
+    transform: rotate(10deg) scale(1.1);
 }
 
 /* Roter billedet tilbage til neutral position når ikke hoveret */
@@ -407,7 +407,7 @@ footer {
 .icon-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
     border-bottom: 2px solid #000; /* Add a border under h3 */
     padding-bottom: 5px; /* Adjust the distance between the border and the text */
 }
@@ -415,7 +415,7 @@ footer {
 .icon-item p {
     font-size: 1rem;
     line-height: 1.5;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -465,7 +465,7 @@ footer {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 100px; /* Juster margin-bottom for mere afstand */
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .review-box {
@@ -515,13 +515,13 @@ footer {
 .review-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .review-item p {
     font-size: 1rem;
     line-height: 1.5;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -583,7 +583,9 @@ footer {
         color: white;
         padding: 0.5px 20px; /* Mindre padding */
         font-size: 0.875rem; /* Mindre font-størrelse */
-        margin-bottom: -20px;
+        margin-bottom: -30px;
+        
+        
 
 
     }
