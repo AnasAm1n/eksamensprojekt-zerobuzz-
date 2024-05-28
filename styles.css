@@ -66,7 +66,11 @@ a {
 }
 
 a:visited {
+<<<<<<< HEAD
+    color: rgb(255, 255, 255);
+=======
     color: rgb(0, 0, 0);
+>>>>>>> 7fa7f070818f49db4a55f82fcdd26339af760e05
     font-family: 'Oswald', sans-serif;
 }
 
@@ -541,6 +545,62 @@ footer {
     }
 }
 
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+
+}
+.kontakt-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #A8957A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3CADB0;
+    color: #9B6441;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #385455;
+}
 
 
 /* Medieforespørgsler for forskellige enheder */
