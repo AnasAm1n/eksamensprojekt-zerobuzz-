@@ -66,11 +66,8 @@ a {
 }
 
 a:visited {
-<<<<<<< HEAD
     color: rgb(255, 255, 255);
-=======
     color: rgb(0, 0, 0);
->>>>>>> 7fa7f070818f49db4a55f82fcdd26339af760e05
     font-family: 'Oswald', sans-serif;
 }
 
