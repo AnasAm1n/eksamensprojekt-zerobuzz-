@@ -335,8 +335,8 @@ footer {
     max-width: 110%;
     height: auto;
     transition: transform 0.5s ease;
-    margin-top: -160px; /* Tilføjet negativ margin for at skubbe billedet opad */
-    margin-left: -30px; /* Juster denne værdi efter behov */
+    margin-top: -160px; /* Negativ margin for at skubbe billedet opad */
+    margin-left: -30px; 
 
 }
 
@@ -352,7 +352,7 @@ footer {
 .text-container {
     flex: 1;
     padding-left: 0px;
-    margin-top: -150px; /* Tilføj denne linje for at skubbe teksten lidt op */
+    margin-top: -150px; /* skubbe teksten lidt op */
 }
 
 .text-container h2 {
@@ -386,7 +386,7 @@ footer {
 .icon-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items til toppen*/
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1200px;
@@ -409,8 +409,8 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: 'Oswald', sans-serif;
-    border-bottom: 2px solid #000; /* Add a border under h3 */
-    padding-bottom: 5px; /* Adjust the distance between the border and the text */
+    border-bottom: 2px solid #000; /* Border under h3 */
+    padding-bottom: 5px; 
 }
 
 .icon-item p {
@@ -456,8 +456,8 @@ footer {
 
 .review-section {
     background-color: #9B6441;
-    padding: 20px 0; /* Juster paddingen for at skubbe sektionen tættere på dine ikoner */
-    margin-top: -450px; /* Juster marginen for at flytte sektionen opad */
+    padding: 20px 0; /* Juster paddingen for at skubbe sektionen tættere på ikonerne */
+    margin-top: -450px; /* marginen for at flytte sektionen opad */
     overflow: hidden; /* Skjul indhold uden for containeren */
 }
 
@@ -470,13 +470,13 @@ footer {
 }
 
 .review-box {
-    background-color: #A8957A; /* Baggrunds farve for din review boks */
+    background-color: #A8957A; /* Baggrunds farve for review boks */
     border-radius: 10px; /* Afrundede kanter */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
     padding: 20px; /* Juster boksens padding efter behov */
     margin: 0 auto; /* Center review boksen på siden */
-    max-width: 600px; /* Sæt en maksimal bredde for boksen */
-    overflow: hidden; /* Skjul indhold uden for boksen */
+    max-width: 600px; /* Sætter en maksimal bredde for boksen */
+    overflow: hidden; /* Skjuler indhold uden for boksen */
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Glidende overgangseffekt for baggrundsfarve, skyggeeffekt og forskydning */
 }
 
@@ -676,7 +676,7 @@ input[type="submit"]:hover {
     display: grid;
 }
 .review-box {
-    background-color: #A8957A; /* Baggrunds farve for din review boks */
+    background-color: #A8957A; /* Baggrunds farve for review boks */
     border-radius: 10px; /* Afrundede kanter */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
     padding: 20px; /* Juster boksens padding efter behov */
@@ -686,11 +686,11 @@ input[type="submit"]:hover {
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Glidende overgangseffekt for baggrundsfarve, skyggeeffekt og forskydning */
 }
 .review-section h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .kontakt-container h1 {
-    font-size: 45px;
+    font-size: 35px;
 }
 
 
